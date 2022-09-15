@@ -8,11 +8,11 @@ export default function AddBook() {
         <span className="book-title">
           ADD NEW BOOK
         </span>
-        <div className="input-fields">
-          <input className="book-input" placeholder="Book" />
+        <form className="input-fields">
+          <input className="book-input" placeholder="Title" />
           <input className="author-input" placeholder="Author" />
           <button className="add-btn" type="button">Add Book</button>
-        </div>
+        </form>
       </div>
     </div>
   );

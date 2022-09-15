@@ -1,13 +1,14 @@
 import './book.css';
 
-export default function Book() {
+export default function Book(props) {
+  const name = props;
   return (
     <div>
       <div className="card">
         <div className="details">
           <p className="action">Action</p>
-          <span className="Title">Then Hunger Games</span>
-          <span className="Suzanne-Collins">Suzanne Collins</span>
+          <span className="Title">{name.title}</span>
+          <span className="Suzanne-Collins">{name.author}</span>
           <ul>
             <li>Comments</li>
             <li>Remove</li>
@@ -18,7 +19,6 @@ export default function Book() {
           <div className="Oval-2" />
           <span className="Percent-Complete">
             64%
-            {' '}
             <br />
             <span className="Completed Text-Style-2">
               Completed
@@ -39,8 +39,8 @@ export default function Book() {
       <div className="card">
         <div className="details">
           <p className="action">Action</p>
-          <span className="Title">Then Hunger Games</span>
-          <span className="Suzanne-Collins">Suzanne Collins</span>
+          <span className="Title">{name.title}</span>
+          <span className="Suzanne-Collins">{name.author}</span>
           <ul>
             <li>Comments</li>
             <li>Remove</li>
