@@ -1,9 +1,9 @@
 import { createAction } from '@reduxjs/toolkit';
 
-export const status = createAction('status');
+export const STATUS = createAction('STATUS');
 
 export default function reducer(state = [], action) {
-  if (action.type === status.type) {
+  if (action.type === STATUS.type) {
     return [
       ...state,
       {

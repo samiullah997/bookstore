@@ -1,10 +1,10 @@
 import { createAction } from '@reduxjs/toolkit';
 
-export const bookAdded = createAction('bookAdded');
-export const bookRemove = createAction('bookRemove');
+export const BOOK_ADDED = createAction('BOOK_ADDED');
+export const REMOVE_BOOK = createAction('REMOVE_BOOK');
 
 export default function reducer(state = [], action) {
-  if (action.type === bookAdded.type) {
+  if (action.type === BOOK_ADDED.type) {
     return [
       ...state,
       {
@@ -13,7 +13,7 @@ export default function reducer(state = [], action) {
         author: action.payload.author,
       },
     ];
-  } if (action.type === bookRemove.type) {
+  } if (action.type === REMOVE_BOOK.type) {
     return state.filter((item) => item.id !== action.payload.id);
   }
   return state;
