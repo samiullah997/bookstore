@@ -1,7 +1,7 @@
 import './book.css';
 
 export default function Book(props) {
-  const name = props;
+  const { name } = props;
   return (
     <div>
       <div className="card">
