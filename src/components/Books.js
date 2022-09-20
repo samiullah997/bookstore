@@ -1,15 +1,13 @@
 import './books.css';
+import { useSelector } from 'react-redux';
 import Book from './Book';
 import AddBook from './AddBook';
 
-const state = {
-  title: 'Then Hunger Games',
-  author: 'Suzanne Collins',
-};
 export default function Home() {
+  const books = useSelector((state) => state.books);
   return (
     <div>
-      <Book name={state} />
+      <Book books={books} />
       <AddBook />
     </div>
   );

@@ -72,6 +72,19 @@
   color: #4386bf;
 }
 
+.btn-remove {
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
 .Oval-2 {
   width: 4.25rem;
   height: 4.25rem;
