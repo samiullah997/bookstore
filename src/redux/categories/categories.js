@@ -1,15 +1,14 @@
-import { createAction } from '@reduxjs/toolkit';
+const STATUS_CHEKCKED = 'STATUS_CHEKCKED';
 
-export const STATUS = createAction('STATUS');
-
-export default function reducer(state = [], action) {
-  if (action.type === STATUS.type) {
-    return [
-      ...state,
-      {
-        status: 'Under construction',
-      },
-    ];
+const categoriesReducer = (state = '', action) => {
+  switch (action.type) {
+    case STATUS_CHEKCKED:
+      return 'Under construction';
+    default:
+      return state;
   }
-  return state;
-}
+};
+
+export const checkStatus = () => ({ type: STATUS_CHEKCKED });
+
+export default categoriesReducer;

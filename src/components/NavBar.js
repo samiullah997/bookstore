@@ -6,12 +6,14 @@ export default function NavBar() {
     <div>
       <nav>
         <div className="logo-items">
-          <h2 className="book">
-            Book
-            <span>Store</span>
-          </h2>
+          <Link className="a" to="/">
+            <h2 className="book">
+              Book
+              <span>Store</span>
+            </h2>
+          </Link>
           <ul>
-            <li><Link className="a" to="/Books">Books</Link></li>
+            <li><Link className="a" to="/">Books</Link></li>
             <li><Link className="a category" to="/Categories">Categories</Link></li>
           </ul>
         </div>

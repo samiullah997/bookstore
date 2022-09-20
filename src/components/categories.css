@@ -1,0 +1,16 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 10px;
+  border: 1px solid #4386bf;
+  background-color: #fff;
+  color: #4386bf;
+  text-align: center;
+}
