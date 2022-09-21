@@ -1,10 +1,17 @@
 import './books.css';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getBooks } from '../redux/books/Books';
 import Book from './Book';
 import AddBook from './AddBook';
 
 export default function Home() {
   const books = useSelector((state) => state.books);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getBooks());
+  }, []);
+
   return (
     <div>
       <Book books={books} />
