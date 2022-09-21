@@ -62,7 +62,7 @@ export default function AddBook() {
             <option value="Self-Help">Self-Help</option>
             <option value="True Crime">True Crime</option>
           </select>
-          <button className="add-btn" type="submit" onClick={dispatch}>Add Book</button>
+          <button className="add-btn" type="submit" onClick={handleSumbit}>Add Book</button>
         </form>
       </div>
     </div>
