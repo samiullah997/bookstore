@@ -18,7 +18,7 @@ const booksReducer = (state = [], action) => {
 };
 
 export const addBook = (book) => async (dispatch) => {
-  await api.addNewBook(book);
+  api.addNewBook(book);
   dispatch({ type: ADD_BOOK, book });
 };
 
