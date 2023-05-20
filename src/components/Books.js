@@ -15,7 +15,6 @@ export default function Home() {
   return (
     <div>
       <Book books={books} />
-      <script type='text/javascript' src='https://www.star-clicks.com/secure/ads.php?pid=59067942450599627'></script>
       <AddBook />
     </div>
   );
